@@ -1,0 +1,26 @@
+[
+  {
+    "key": 1,
+    "id": "item1",
+    "label": "Todos",
+    "value": "All"
+  },
+  {
+    "key": 2,
+    "id": "item2",
+    "label": "Bebidas",
+    "value": "Bebidas"
+  },
+  {
+    "key": 3,
+    "id": "item3",
+    "label": "Guajolotas",
+    "value": "Guajolota"
+  },
+  {
+    "key": 4,
+    "id": "item4",
+    "label": "Tamales",
+    "value": "Tamal"
+  }
+]

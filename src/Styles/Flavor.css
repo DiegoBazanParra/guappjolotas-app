@@ -1,0 +1,53 @@
+.Product-Related {
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+  display: grid;
+  grid-column-gap: 20px;
+}
+
+@media (min-width: 300px) {
+  .Product-Related {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 480px) {
+  .Product-Related {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .Product-Related {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .Product-Related {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.Product-Flavor-Related {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-row-gap: 10px;
+  padding: 30px;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: 300ms;
+  opacity: 0.5;
+}
+
+.Product-Flavor-Related:hover {
+  opacity: 1;
+}
+
+.Product-Flavor-Related img {
+  width: 60px;
+}

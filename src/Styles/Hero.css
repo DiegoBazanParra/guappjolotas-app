@@ -1,0 +1,13 @@
+.Hero-Container {
+  width: 100%;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.Hero-Container h1 {
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+  font-weight: 600;
+  color: black;
+}

@@ -1,0 +1,112 @@
+.Tabs {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.Tabs .Title {
+  margin-block-start: 20px;
+  margin-block-end: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Tabs header {
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.Tabs nav {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.Tabs nav label {
+  display: block;
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  user-select: none;
+  line-height: 40px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: black;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.Tabs nav label:hover {
+  color: #666666;
+}
+
+.TabBar {
+  margin: auto;
+}
+
+.TabBar-Container {
+  background: rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  padding: 4px;
+  position: relative;
+}
+
+nav .slider {
+  position: absolute;
+  height: 100%;
+  width: 25%;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.Tabs input[type="radio"] {
+  display: none;
+}
+
+#item1:checked~nav .slider {
+  left: 0%;
+}
+
+#item2:checked~nav .slider {
+  left: 25%;
+}
+
+#item3:checked~nav .slider {
+  left: 50%;
+}
+
+#item4:checked~nav .slider {
+  left: 75%;
+}
+
+@media (max-width: 468px) {
+  .Tabs nav label {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+section .content {
+  display: none;
+  background: #fff;
+}
+
+section .content .title {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+}
+
+section .content p {
+  text-align: justify;
+}
