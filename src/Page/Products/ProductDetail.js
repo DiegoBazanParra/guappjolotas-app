@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ChevronLeft, ChevronRight, Delete, Star } from "react-iconly";
 import { DataContext } from "Context/DataProvider";
-import Cart from "Components/Cart";
+import Cart from "Components/Cart/Cart";
 import ProductsRelated from "./ProductsRelated";
 
 function ProductDetail() {

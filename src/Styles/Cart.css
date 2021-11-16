@@ -146,7 +146,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  grid-gap: 10px;
   padding: 20px 10px;
 }
 
@@ -183,7 +183,7 @@
 
 .Cart-Count {
   display: flex;
-  gap: 5px;
+  grid-gap: 5px;
   justify-content: center;
   align-items: center;
   border-radius: 10px 0px 0px 10px;
@@ -235,7 +235,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
+  grid-gap: 10px;
 }
 
 .Cart-Footer .button {

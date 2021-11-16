@@ -19,7 +19,7 @@
 .Header-Container {
   display: flex;
   align-items: center;
-  gap: 50px;
+  grid-gap: 50px;
   justify-content: space-between;
   padding: 0 20px;
   max-width: 1300px;
@@ -30,7 +30,7 @@
   display: none;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  grid-gap: 20px;
 }
 
 .Header-Container nav a {
