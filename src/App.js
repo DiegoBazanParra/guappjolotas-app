@@ -1,4 +1,4 @@
-import "./styles.css";
+import "Styles/Global.css";
 // DataProvider
 import { DataProvider } from "Context/DataProvider";
 // Components
@@ -6,7 +6,7 @@ import Header from "./Components/Header";
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "Page/Routes/Routes";
 
-export default function App() {
+function App() {
   return (
     <DataProvider>
       <div className="App">
@@ -18,3 +18,4 @@ export default function App() {
     </DataProvider>
   );
 }
+export default App;

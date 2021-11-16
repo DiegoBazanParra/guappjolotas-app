@@ -2,7 +2,7 @@ import React, { useContext, Fragment } from "react";
 import Link from "./Link.json";
 import { DataContext } from "Context/DataProvider";
 
-export default function Categories() {
+function Categories() {
   const value = useContext(DataContext);
   const handleTabs = value.handleTabs;
   return (
@@ -32,3 +32,4 @@ export default function Categories() {
     </div>
   );
 }
+export default Categories;

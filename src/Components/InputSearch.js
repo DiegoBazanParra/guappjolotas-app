@@ -2,7 +2,8 @@ import "Styles/Search.css";
 import React, { useContext } from "react";
 import { DataContext } from "Context/DataProvider";
 import { Search, Voice } from "react-iconly";
-export default function InputSearch() {
+
+function InputSearch() {
   const value = useContext(DataContext);
   const handleSearch = value.handleSearch;
 
@@ -28,3 +29,4 @@ export default function InputSearch() {
     </div>
   );
 }
+export default InputSearch;

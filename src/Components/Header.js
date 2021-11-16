@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { DataContext } from "Context/DataProvider";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+function Header() {
   const value = useContext(DataContext);
   const [cart] = value.cart;
   const [menu, setMenu] = value.menu;
@@ -30,3 +30,4 @@ export default function Header() {
     </header>
   );
 }
+export default Header;

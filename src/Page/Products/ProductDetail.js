@@ -1,9 +1,9 @@
 import "Styles/ProductDetails.css";
 import React, { useContext, useEffect, useState } from "react";
-import { DataContext } from "Context/DataProvider";
 import { useParams } from "react-router-dom";
-import Cart from "Components/Cart";
 import { ChevronLeft, ChevronRight, Delete, Star } from "react-iconly";
+import { DataContext } from "Context/DataProvider";
+import Cart from "Components/Cart";
 import ProductsRelated from "./ProductsRelated";
 
 function ProductDetail() {

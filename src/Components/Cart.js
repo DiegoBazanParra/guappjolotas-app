@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import { ChevronLeft, ChevronRight, Delete, CloseSquare } from "react-iconly";
 import "Styles/Cart.css";
+import React, { useContext } from "react";
 import { DataContext } from "Context/DataProvider";
+import { ChevronLeft, ChevronRight, Delete, CloseSquare } from "react-iconly";
 
-export default function Cart() {
+function Cart() {
   const value = useContext(DataContext);
   const [menu, setMenu] = value.menu;
   const [total] = value.total;
@@ -93,3 +93,4 @@ export default function Cart() {
     </>
   );
 }
+export default Cart;

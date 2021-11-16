@@ -1,4 +1,5 @@
 import "Styles/Paginate.css";
+
 import ReactPaginate from "react-paginate";
 import { useContext } from "react";
 import { DataContext } from "Context/DataProvider";
