@@ -1,6 +1,5 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-// Controla las Paginas
 import Products from "Page/Products/Products";
 import ProductDetail from "Page/Products/ProductDetail";
 import Wrapper from "Components/Wrapper";

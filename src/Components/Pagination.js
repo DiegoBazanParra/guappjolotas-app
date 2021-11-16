@@ -1,8 +1,8 @@
 import "Styles/Paginate.css";
-
-import ReactPaginate from "react-paginate";
 import { useContext } from "react";
+import ReactPaginate from "react-paginate";
 import { DataContext } from "Context/DataProvider";
+
 function Pagination() {
   const value = useContext(DataContext);
   const pageCount = value.pageCount;

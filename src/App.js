@@ -1,9 +1,7 @@
 import "Styles/Global.css";
-// DataProvider
 import { DataProvider } from "Context/DataProvider";
-// Components
-import Header from "./Components/Header";
 import { BrowserRouter as Router } from "react-router-dom";
+import Header from "./Components/Header";
 import Routes from "Page/Routes/Routes";
 
 function App() {
