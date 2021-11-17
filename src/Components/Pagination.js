@@ -9,17 +9,19 @@ function Pagination() {
   const changePage = value.changePage;
 
   return (
-    <ReactPaginate
-      previousLabel={"Anterior"}
-      nextLabel={"Siguiente"}
-      pageCount={pageCount}
-      onPageChange={changePage}
-      containerClassName={"paginationBttns"}
-      previousLinkClassName={"previousBttn"}
-      nextLinkClassName={"nextBttn"}
-      disabledClassName={"paginationDisabled"}
-      activeClassName={"paginationActive"}
-    />
+    <div className="Pagination">
+      <ReactPaginate
+        previousLabel={"Anterior"}
+        nextLabel={"Siguiente"}
+        pageCount={pageCount}
+        onPageChange={changePage}
+        containerClassName={"paginationBttns"}
+        previousLinkClassName={"previousBttn"}
+        nextLinkClassName={"nextBttn"}
+        disabledClassName={"paginationDisabled"}
+        activeClassName={"paginationActive"}
+      />
+    </div>
   );
 }
 export default Pagination;

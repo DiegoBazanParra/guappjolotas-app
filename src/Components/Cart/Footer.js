@@ -1,4 +1,6 @@
-function CartFooter({ total }) {
+import "Styles/Cart/Footer.css";
+
+function Footer({ total }) {
   return (
     <div className="Cart-Footer">
       <h3 className="Cart-Total">Total a Pagar: S/. {total}</h3>
@@ -13,4 +15,4 @@ function CartFooter({ total }) {
     </div>
   );
 }
-export default CartFooter;
+export default Footer;

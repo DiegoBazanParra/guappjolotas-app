@@ -1,7 +1,8 @@
+import "Styles/Cart/Header.css";
 import React from "react";
 import { CloseSquare } from "react-iconly";
 
-function CartHeader({ tooglefalse }) {
+function Header({ tooglefalse }) {
   return (
     <div className="Cart-Header">
       <div className="Cart-Header-Close" onClick={tooglefalse}>
@@ -16,4 +17,4 @@ function CartHeader({ tooglefalse }) {
   );
 }
 
-export default CartHeader;
+export default Header;

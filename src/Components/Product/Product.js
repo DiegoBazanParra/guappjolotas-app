@@ -4,11 +4,7 @@ import ProductoItem from "./ProductItem";
 import "Styles/Product.css";
 
 function Product() {
-  return (
-    <>
-      <ProductList />
-    </>
-  );
+  return <ProductList />;
 }
 export default Product;
 
@@ -17,10 +13,12 @@ function ProductList() {
   const displayProducts = value.displayProducts;
 
   return (
-    <div className="Container-Product">
-      {displayProducts.map((item) => (
-        <ProductoItem key={item.id} item={item} />
-      ))}
+    <div className="Products">
+      <div className="Container-Product">
+        {displayProducts.map((item) => (
+          <ProductoItem key={item.id} item={item} />
+        ))}
+      </div>
     </div>
   );
 }

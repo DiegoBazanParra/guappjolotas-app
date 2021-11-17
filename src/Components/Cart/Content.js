@@ -1,7 +1,7 @@
 import React from "react";
 import { ChevronLeft, ChevronRight, Delete } from "react-iconly";
 
-function CartContent({ cart, reduce, increase, removeProduct }) {
+function Content({ cart, reduce, increase, removeProduct }) {
   return (
     <div className="Cart-Container">
       {cart.map((producto) => (
@@ -19,22 +19,22 @@ function CartContent({ cart, reduce, increase, removeProduct }) {
           </div>
           <div className="Cart-Options">
             <div className="Cart-Count">
-              <div className="Icon" onClick={() => reduce(producto.id)}>
+              <button className="Icon" onClick={() => reduce(producto.id)}>
                 <ChevronLeft set="bold" primaryColor="black" />
-              </div>
+              </button>
               <p className="Cart-quantity">{producto.quantity}</p>
-              <div className="Icon" onClick={() => increase(producto.id)}>
+              <button className="Icon" onClick={() => increase(producto.id)}>
                 <ChevronRight set="bold" primaryColor="black" />
-              </div>
+              </button>
             </div>
-            <div
+            <button
               className="Cart-Remove-Item"
               onClick={() => removeProduct(producto.id)}
             >
               <div className="Icon">
                 <Delete set="bold" primaryColor="white" />
               </div>
-            </div>
+            </button>
           </div>
         </div>
       ))}
@@ -42,4 +42,4 @@ function CartContent({ cart, reduce, increase, removeProduct }) {
   );
 }
 
-export default CartContent;
+export default Content;

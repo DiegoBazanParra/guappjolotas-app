@@ -1,9 +1,9 @@
-import "Styles/Cart.css";
+import "Styles/Cart/Cart.css";
 import React, { useContext } from "react";
 import { DataContext } from "Context/DataProvider";
-import CartFooter from "./CartFooter";
-import CartHeader from "./CartHeader";
-import CartContent from "./CartContent";
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
 
 function Cart() {
   const value = useContext(DataContext);
@@ -19,22 +19,25 @@ function Cart() {
   };
   const showBackCart = menu ? "Background Show" : "Background None";
   const showCart = menu ? "Shopping-Cart Show" : "Shopping-Cart None";
+
   return (
     <>
       <div className={showBackCart}>
         <div className={showCart}>
-          <CartHeader tooglefalse={tooglefalse} />
-          {cart.length === 0 ? (
-            <h2 className="Cart-Title-Msg">Carro Vacío</h2>
-          ) : (
-            <CartContent
-              removeProduct={removeProduct}
-              increase={increase}
-              reduce={reduce}
-              cart={cart}
-            />
-          )}
-          <CartFooter total={total} />
+          <Header tooglefalse={tooglefalse} />
+          <div className="Cart-Wrapper">
+            {cart.length === 0 ? (
+              <h2 className="Cart-Title-Msg">Carro Vacío</h2>
+            ) : (
+              <Content
+                removeProduct={removeProduct}
+                increase={increase}
+                reduce={reduce}
+                cart={cart}
+              />
+            )}
+            <Footer total={total} />
+          </div>
         </div>
       </div>
     </>

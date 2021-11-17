@@ -24,7 +24,9 @@ function Header() {
         </Link>
         <div className="Cart" onClick={tooglefalse}>
           <img src="https://i.imgur.com/tDyYFSx.png" alt="Cart" />
-          <span className="Cart-Total">{cart.length}</span>
+          <div className="Count">
+            <span className="Cart-Total">{cart.length}</span>
+          </div>
         </div>
       </div>
     </header>

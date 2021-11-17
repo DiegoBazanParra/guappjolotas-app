@@ -7,13 +7,13 @@
   box-shadow: 0px 3px 2px rgb(0 0 0 / 6%);
 }
 
+.Header a {
+  text-decoration: none;
+}
+
 .Logo {
   display: block;
   width: 60px;
-}
-
-.Header a {
-  text-decoration: none;
 }
 
 .Header-Container {
@@ -41,17 +41,35 @@
 .Header-Container .Cart {
   margin-right: 20px;
   cursor: pointer;
+  position: relative;
 }
 
-.Header-Container .Cart span {
+.Header-Container .Cart img {
+  display: block;
+}
+
+.Header-Container .Cart .Count {
+  top: -20px;
+  right: -25px;
   position: absolute;
-  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
   background-color: #fa4a0c;
   padding: 3px 8px;
-  color: white;
+  border-radius: 50px;
+}
+
+.Header-Container .Cart .Count span {
   font-size: 13px;
   font-weight: 500;
-  border-radius: 50px;
+}
+
+@media (max-width: 480px) {
+  .Logo {
+    width: 50px;
+  }
 }
 
 @media (min-width: 768px) {

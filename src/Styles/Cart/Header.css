@@ -1,0 +1,36 @@
+.Cart-Header {
+  margin-block-end: 20px;
+  border-bottom: 2px solid rgb(14 14 14 / 12%);
+  position: sticky;
+  top: 0;
+  padding: 20px 0px;
+  /* background: #ffffffc2; */
+  background-color: #fff;
+  /* backdrop-filter: blur(10px); */
+}
+
+.Cart-Header-Close {
+  position: absolute;
+  right: 0px;
+}
+
+.Cart-Title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-block-start: 20px;
+  margin-block-end: 10px;
+}
+
+@media (min-width: 300px) {
+  .Cart-Title {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Cart-Title {
+    font-size: 30px;
+    /* font-weight: 600; */
+  }
+}
