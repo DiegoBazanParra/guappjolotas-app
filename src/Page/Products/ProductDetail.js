@@ -8,7 +8,7 @@ import ProductsRelated from "./ProductsRelated";
 
 function ProductDetail() {
   const value = useContext(DataContext);
-  const [productos] = value.productos;
+  const [products] = value.products;
   const params = useParams();
   const removeProduct = value.removeProduct;
   const [detalle, setDetalle] = useState([]);
@@ -18,12 +18,12 @@ function ProductDetail() {
   let item = 0;
 
   useEffect(() => {
-    productos.forEach((product) => {
+    products.forEach((product) => {
       if (product.id === parseInt(params.id)) {
         setDetalle(product);
       }
     });
-  }, [params.id, productos]);
+  }, [params.id, products]);
 
   const handleAddCart = () => {
     addCarrito(detalle.id);
@@ -73,7 +73,7 @@ function ProductDetail() {
                 <div className="Tags-Flover">
                   <p className="Qualification-Title">Puntuación:</p>
                   <div className="Tags-Qualification">
-                    {productos.map(({ id }) => {
+                    {products.map(({ id }) => {
                       if (item < 5 && detalle.qualification) {
                         item += 1;
                         return (

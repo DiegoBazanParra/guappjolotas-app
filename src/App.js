@@ -1,7 +1,7 @@
 import "Styles/Global.css";
 import { HashRouter } from "react-router-dom";
-import Header from "./Components/Header";
-import Routes from "Page/Routes/Routes";
+import Header from "Components/Header";
+import Routes from "Routes/Routes";
 
 function App() {
   return (

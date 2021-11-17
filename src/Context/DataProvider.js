@@ -131,10 +131,10 @@ export const DataProvider = (props) => {
     pagesVisited + usersPerPage
   );
 
-  // console.log(productos);
+  // console.log(products);
   const value = {
     // Products
-    productos: [products],
+    products: [products],
     // Menu
     menu: [menu, setMenu],
     // Filter Categorie Products
