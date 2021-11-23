@@ -1,4 +1,4 @@
-import React from "react";
+import "Styles/Cart/Content.css";
 import { ChevronLeft, ChevronRight, Delete } from "react-iconly";
 
 function Content({ cart, reduce, increase, removeProduct }) {

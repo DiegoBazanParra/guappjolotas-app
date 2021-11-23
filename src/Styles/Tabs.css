@@ -57,7 +57,7 @@
   position: relative;
 }
 
-nav .slider {
+.Tabs nav .slider {
   position: absolute;
   height: 100%;
   width: 25%;
@@ -94,19 +94,4 @@ nav .slider {
     font-size: 13px;
     font-weight: 600;
   }
-}
-
-section .content {
-  display: none;
-  background: #fff;
-}
-
-section .content .title {
-  font-size: 21px;
-  font-weight: 500;
-  margin: 30px 0 10px 0;
-}
-
-section .content p {
-  text-align: justify;
 }

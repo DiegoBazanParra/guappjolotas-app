@@ -1,0 +1,140 @@
+.Cart-Title-Msg {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin-block-end: 50px;
+}
+
+.Cart-Container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.Cart-Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+  padding: 20px 10px;
+}
+
+.Cart-Content {
+  display: flex;
+  flex-direction: column;
+}
+
+.Cart-Item {
+  display: grid;
+  padding: 25px 20px;
+  border: 2px solid rgb(14 14 14 / 12%);
+  background-color: white;
+  border-radius: 10px;
+}
+
+.Cart-Img {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cart-Img img {
+  width: 100px;
+  display: block;
+}
+
+.Cart-Info-Title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.Cart-Count {
+  display: flex;
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid rgb(14 14 14 / 12%);
+  border-radius: 10px 0px 0px 10px;
+  background: #f0f0f0;
+}
+
+.Cart-Count .Icon {
+  cursor: pointer;
+  border: none;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+}
+
+.Cart-Options {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 50px;
+}
+
+.Cart-Remove-Item {
+  border-radius: 0px 10px 10px 0px;
+  border: 2px solid black;
+  cursor: pointer;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: opacity 300ms linear;
+}
+
+.Cart-Remove-Item .Icon {
+  display: flex;
+  width: 20px;
+}
+
+.Cart-Header-Close .Icon {
+  display: flex;
+  cursor: pointer;
+  transition: opacity 300ms linear;
+}
+
+.Cart-Info-Price {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.Cart-Info-Price span {
+  font-weight: 500;
+}
+
+
+.Cart-Header-Close .Icon:hover,
+.Cart-Remove-Item:hover {
+  opacity: 0.7;
+}
+
+.Cart-Total {
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0;
+}
+
+@media (min-width: 300px) {
+  .Cart-Total {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .Cart-Title-Msg {
+    font-size: 20px;
+  }
+}
+
+.Cart-Options-Total {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+}
